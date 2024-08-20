@@ -11,6 +11,8 @@ import java.util.Map;
 /*
 OOO: 은 OOO함수의 변경사항 이라는 의미. 오해 소지가 있는 부분만 작성
 
+요금 계산 로직 분리하기
+
 1. switch 구문 함수 추출 -> amountFor
 (함수 추출하면 꼭 명확하게 표한할 수 있는 간단한 방법은 없는지 검토)
 2. amountFor: thisAmount -> result 변수명 변경 (저자는 항상 반환할 값은 result로 함)
@@ -22,7 +24,7 @@ OOO: 은 OOO함수의 변경사항 이라는 의미. 오해 소지가 있는 부
     3-4. amountFor: playFor를 사용하도록 수정하기
 4. statement: amountFor를 받는 thisAmount 변수 인라인하기
  */
-public class Statement_4_AmountFor {
+public class Statement_2 {
     public Map<String, Play> plays;
     public String statement(Invoice invoices, Map<String, Play> plays) {
         this.plays = plays;

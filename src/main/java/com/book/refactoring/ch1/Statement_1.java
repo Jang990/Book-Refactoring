@@ -9,6 +9,7 @@ import java.text.NumberFormat;
 import java.util.Locale;
 import java.util.Map;
 
+/* 시작 코드 */
 public class Statement_1 {
     public String statement(Invoice invoices, Map<String, Play> plays) {
         int totalAmount = 0;

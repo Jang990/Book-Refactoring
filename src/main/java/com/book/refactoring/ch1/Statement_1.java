@@ -9,7 +9,15 @@ import java.text.NumberFormat;
 import java.util.Locale;
 import java.util.Map;
 
-/* 시작 코드 */
+/*
+시작 코드.
+
+지금은 그냥 TEXT를 출력하는데
+추가 요구사항으로 HTML로 출력해야 한다.
+
+그냥 이 코드들 전부 복사해서 HTML을 만드는 코드를 따로 약간 수정해서 만들어야 할까?
+일단 복잡하게 얽힌 덩어리를 잘게 쪼개보자.
+*/
 public class Statement_1 {
     public String statement(Invoice invoices, Map<String, Play> plays) {
         int totalAmount = 0;

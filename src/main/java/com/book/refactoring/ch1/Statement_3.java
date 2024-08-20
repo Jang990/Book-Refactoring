@@ -26,6 +26,8 @@ format같은 임시변수는 제거하는 편이 좋다.
 formatAsUSD는 변수명이 너무 장황함.
 5. usd: '/100' 단위 변환 로직을 함수안으로 이동시키기
 
+좋은 이름 짓기: 당장 떠오르는 최선의 이름을 쓰다가 더 좋은 이름이 떠오를 때 바꾸기
+
  */
 public class Statement_3 {
     public Map<String, Play> plays;

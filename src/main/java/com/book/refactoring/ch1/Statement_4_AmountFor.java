@@ -72,7 +72,7 @@ public class Statement_4_AmountFor {
                 }
                 result += 300 * perf.audience();
             }
-            default -> throw new IllegalArgumentException("알 수 없는 장르");
+            default -> throw new IllegalArgumentException("알 수 없는 장르 : " + playFor(perf).type());
         }
         return result;
     }

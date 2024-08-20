@@ -37,7 +37,7 @@ public class Statement_1 {
                     }
                     thisAmount += 300 * perf.audience();
                 }
-                default -> throw new IllegalArgumentException("알 수 없는 장르");
+                default -> throw new IllegalArgumentException("알 수 없는 장르" + play.type());
             }
 
             // 포인트를 적립한다.

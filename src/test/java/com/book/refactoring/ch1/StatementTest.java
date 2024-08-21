@@ -34,4 +34,12 @@ class StatementTest {
         assertThat(result).isEqualTo(TestConst.RESULT);
     }
 
+
+    @Test
+    void test5() {
+        Statement_5 statement = new Statement_5();
+        String result = statement.statement(TestConst.INVOICES, TestConst.PLAYS);
+        assertThat(result).isEqualTo(TestConst.RESULT);
+    }
+
 }

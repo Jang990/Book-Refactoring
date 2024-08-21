@@ -21,7 +21,7 @@ statement에 누적값을 저장하는 volumeCredits 제거하기
     for (Performance perf : invoices.performances()) {
         volumeCredits += volumeCreditsFor(perf);
     }
-3. 함수 추출 -> totalVolumeCredits
+3. 함수 추출 -> volumeCredits
 4. statement: volumeCredits 변수 인라인
 
 반복문을 2번 돌리는게 성능에 미치는 영향이 미미할 때가 많음. 하드웨어는 생각보다 빠름.
@@ -30,7 +30,7 @@ statement에 누적값을 저장하는 volumeCredits 제거하기
 이 과정에서 다시 되돌릴 수도 있음. 하지만 대체로 성능이 더 빨라짐.
 즉 성능+ 코드-가독성+
 
-5. totalAmount도 똑같이 쪼개주기. -> totalAmount()
+5. totalAmount도 똑같이 쪼개주기. -> amount()
  */
 public class Statement_4 {
     public Map<String, Play> plays;

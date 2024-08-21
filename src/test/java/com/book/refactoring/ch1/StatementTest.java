@@ -2,6 +2,7 @@ package com.book.refactoring.ch1;
 
 import com.book.refactoring.ch1.statement_6.StatementDataCreator;
 import com.book.refactoring.ch1.statement_6.Statement_6;
+import com.book.refactoring.ch1.statement_7.Statement_7;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -47,6 +48,13 @@ class StatementTest {
     @Test
     void test6() {
         Statement_6 statement = new Statement_6();
+        String result = statement.statement(TestConst.INVOICES, TestConst.PLAYS);
+        assertThat(result).isEqualTo(TestConst.RESULT);
+    }
+
+    @Test
+    void test7() {
+        Statement_7 statement = new Statement_7();
         String result = statement.statement(TestConst.INVOICES, TestConst.PLAYS);
         assertThat(result).isEqualTo(TestConst.RESULT);
     }

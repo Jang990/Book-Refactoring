@@ -17,7 +17,7 @@ class ProvinceTest {
         asia = sampleProvinceData();
     }
 
-    Province sampleProvinceData() {
+    static public Province sampleProvinceData() {
         return new Province(
                 "Asia",
                 List.of(
